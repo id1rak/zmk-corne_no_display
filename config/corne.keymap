@@ -29,6 +29,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        CAPA_NUM {
+            bindings = <&mo 2>;
+            key-positions = <12 24>;
+        };
+
+        CMB_ESC {
+            bindings = <&kp ESC>;
+            key-positions = <24 35>;
+        };
+
+        CMB_GUI {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <36 41>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -42,10 +61,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&td0       &kp Z  &kp X  &kp C     &kp V  &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE    &lt 3 ENTER  &mo 2  &kp RALT
+&mo 1           &kp Q  &kp W  &kp E      &kp R         &kp T        &kp Y       &kp U  &kp I      &kp O    &kp P      &kp BSPC
+&kp TAB         &kp A  &kp S  &kp D      &kp F         &kp G        &kp H       &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V         &kp B        &kp N       &kp M  &kp COMMA  &kp DOT  &kp MINUS  &kp RIGHT_SHIFT
+                              &kp LCTRL  &kp LEFT_ALT  &kp SPACE    &kp RETURN  &mo 2  &kp RALT
             >;
         };
 
@@ -59,10 +78,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5             &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans             &kp INS          &kp DEL          &trans
+&trans          &kp N1           &kp N2          &kp N3        &kp N4        &kp N5           &kp N6         &kp N7          &kp N8    &kp N9     &kp N0    &kp APOSTROPHE
+&kp GRAVE       &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &kp LS(N7)       &kp PAGE_UP    &kp HOME        &kp UP    &kp END    &kp HOME  &kp PG_UP
+&kp LEFT_SHIFT  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &kp RA(GRAVE)    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp END   &kp RIGHT_SHIFT
+                                                 &kp LCTRL     &kp LEFT_ALT  &kp SPACE        &kp RETURN     &kp DEL         &kp RALT
             >;
         };
 
@@ -76,21 +95,24 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &none         &none         &none     &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans    &trans    &kp SPACE    &kp RET    &trans     &trans
+&kp RA(GRAVE)  &kp RA(NUMBER_1)  &kp LS(NUMBER_7)  &kp RA(EQUAL)       &kp APOSTROPHE  &kp LS(NUMBER_2)      &kp F1   &kp F2  &kp F3         &kp F4    &kp F5    &kp F6
+&kp LS(GRAVE)  &kp LS(LBKT)      &kp LS(EQUAL)     &kp LS(NUMBER_1)    &kp LS(N6)      &kp LS(APOSTROPHE)    &kp F7   &kp F8  &kp F9         &kp F10   &kp F11   &kp F12
+&kp LS(N8)     &kp LS(N9)        &kp RA(SEMI)      &kp RA(APOSTROPHE)  &kp RA(LBKT)    &kp RA(GRAVE)         &none    &none   &kp LBRC       &kp RBRC  &kp LCMD  &kp ESC
+                                                   &kp LCTRL           &kp LEFT_ALT    &kp SPACE             &kp RET  &none   &kp RIGHT_ALT
             >;
         };
 
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1      &kp F2  &kp F3  &kp F4      &kp F5         &kp F6       &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
-&trans  &bt BT_CLR  &trans  &trans  &sys_reset  &bootloader    &bootloader  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
-&trans  &trans      &trans  &trans  &trans      &trans         &trans       &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                            &trans  &trans      &trans         &trans       &trans  &trans
+&none   &bt BT_CLR_ALL  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3       &kp N7        &kp N8        &kp N9        &kp KP_PLUS   &kp KP_ASTERISK  &kp BACKSPACE
+&none   &none           &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_OFF  &rgb_ug RGB_ON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS  &kp LS(N7)       &kp K_MUTE
+&trans  &trans          &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL  &kp C_VOL_DN     &kp C_VOLUME_UP
+                                         &trans           &trans           &trans             &trans        &kp N0        &kp DOT
             >;
         };
     };
 };
+
+
+
