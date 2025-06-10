@@ -35,7 +35,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: '-', s: _}
+  - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -57,10 +57,10 @@ layers:
   - {t: '0', s: )}
   - <
   - {t: '`', s: '~'}
-  - BT CLR ALL
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Sft+7, s: Sft+&}
   - PgUp
   - HOME
@@ -69,10 +69,10 @@ layers:
   - HOME
   - PG UP
   - $$mdi:apple-keyboard-shift$$
-  - RGB OFF
-  - RGB ON
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: AltGr+`, s: AltGr+~}
   - PgDn
   - $$mdi:arrow-left-bold$$
@@ -91,7 +91,7 @@ layers:
   - AltGr+1
   - Sft+7
   - '{'
-  - {t: ']', s: '}'}
+  - {t: '-', s: _}
   - Sft+2
   - F1
   - F2
@@ -99,9 +99,9 @@ layers:
   - F4
   - F5
   - F6
-  - {t: Sft+`, s: Sft+~}
-  - {t: 'Sft+[', s: 'Sft+{'}
-  - {t: Sft+=, s: Sft++}
+  - NUBS
+  - Sft+NUBS
+  - {t: '=', s: +}
   - '!'
   - {t: Sft+=, s: Sft++}
   - {t: Sft+-, s: Sft+_}
@@ -119,8 +119,8 @@ layers:
   - {t: AltGr+\, s: AltGr+|}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '{'
-  - '}'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-control$$
