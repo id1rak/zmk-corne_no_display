@@ -31,7 +31,7 @@
         compatible = "zmk,combos";
 
         CAPA_NUM {
-            bindings = <&tog 2>;
+            bindings = <&mo 3>;
             key-positions = <12 24>;
         };
 
@@ -93,10 +93,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp RA(GRAVE)  &kp RA(NUMBER_1)  &kp LS(NUMBER_7)     &kp LEFT_BRACE   &kp SINGLE_QUOTE    &kp LS(NUMBER_2)    &kp F1   &kp F2  &kp F3         &kp F4    &kp F5    &kp F6
-&kp LS(COMMA)  &kp LS(DOT)       &kp LS(EXCLAMATION)  &kp EXCLAMATION  &kp LS(EQUAL)       &kp LS(MINUS)       &kp F7   &kp F8  &kp F9         &kp F10   &kp F11   &kp F12
-&kp LS(N8)     &kp LS(N9)        &kp RA(LBKT)         &kp RA(RBKT)     &kp RA(APOSTROPHE)  &kp RA(BSLH)        &none    &none   &kp LBRC       &kp RBRC  &kp LCMD  &kp ESC
-                                                      &kp LCTRL        &kp LEFT_ALT        &kp SPACE           &kp RET  &none   &kp RIGHT_ALT
+&kp RA(GRAVE)  &kp RA(NUMBER_1)  &kp LS(NUMBER_7)  &kp LEFT_BRACE   &kp RBKT            &kp LS(NUMBER_2)    &kp F1   &kp F2  &kp F3         &kp F4    &kp F5    &kp F6
+&kp LS(GRAVE)  &kp LS(LBKT)      &kp LS(EQUAL)     &kp EXCLAMATION  &kp LS(EQUAL)       &kp LS(MINUS)       &kp F7   &kp F8  &kp F9         &kp F10   &kp F11   &kp F12
+&kp LS(N8)     &kp LS(N9)        &kp RA(LBKT)      &kp RA(RBKT)     &kp RA(APOSTROPHE)  &kp RA(BSLH)        &none    &none   &kp LBRC       &kp RBRC  &kp LCMD  &kp ESC
+                                                   &kp LCTRL        &kp LEFT_ALT        &kp SPACE           &kp RET  &none   &kp RIGHT_ALT
             >;
         };
 
@@ -111,7 +111,6 @@
         };
     };
 };
-
 
 
 
