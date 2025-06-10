@@ -91,7 +91,7 @@ layers:
   - AltGr+1
   - Sft+7
   - '{'
-  - {t: '''', s: '"'}
+  - {t: ']', s: '}'}
   - Sft+2
   - F1
   - F2
@@ -99,9 +99,9 @@ layers:
   - F4
   - F5
   - F6
-  - {t: 'Sft+,', s: Sft+<}
-  - {t: Sft+., s: Sft+>}
-  - Sft+!
+  - {t: Sft+`, s: Sft+~}
+  - {t: 'Sft+[', s: 'Sft+{'}
+  - {t: Sft+=, s: Sft++}
   - '!'
   - {t: Sft+=, s: Sft++}
   - {t: Sft+-, s: Sft+_}
@@ -142,7 +142,7 @@ layers:
   - KP PLUS
   - KP ASTERISK
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB HUD
   - RGB HUI
@@ -154,7 +154,7 @@ layers:
   - KP MINUS
   - {t: Sft+7, s: Sft+&}
   - MUTE
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFR
   - RGB EFF
@@ -174,7 +174,7 @@ layers:
   - {t: ., s: '>'}
 combos:
 - p: [12, 24]
-  k: {t: SYMBOL, h: toggle}
+  k: Fn
 - p: [24, 35]
   k: $$mdi:keyboard-esc$$
 - p: [36, 41]
