@@ -90,8 +90,8 @@ layers:
   - {t: AltGr+`, s: AltGr+~}
   - AltGr+1
   - Sft+7
-  - {t: AltGr+=, s: AltGr++}
-  - <
+  - '{'
+  - {t: '''', s: '"'}
   - Sft+2
   - F1
   - F2
@@ -99,24 +99,24 @@ layers:
   - F4
   - F5
   - F6
-  - {t: Sft+`, s: Sft+~, type: held alternate}
-  - {t: 'Sft+[', s: 'Sft+{'}
+  - {t: 'Sft+,', s: Sft+<}
+  - {t: Sft+., s: Sft+>}
+  - Sft+!
+  - '!'
   - {t: Sft+=, s: Sft++}
-  - Sft+1
-  - {t: Sft+6, s: Sft+^}
-  - Sft+<
+  - {t: Sft+-, s: Sft+_}
   - F7
   - F8
   - F9
   - F10
   - F11
   - F12
-  - {t: Sft+8, s: Sft+*, type: held alternate}
+  - {t: Sft+8, s: Sft+*}
   - {t: Sft+9, s: Sft+(}
-  - {t: AltGr+;, s: 'AltGr+:'}
-  - AltGr+<
   - {t: 'AltGr+[', s: 'AltGr+{'}
-  - {t: AltGr+`, s: AltGr+~}
+  - {t: 'AltGr+]', s: 'AltGr+}'}
+  - AltGr+<
+  - {t: AltGr+\, s: AltGr+|}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '{'
@@ -174,7 +174,7 @@ layers:
   - {t: ., s: '>'}
 combos:
 - p: [12, 24]
-  k: SYMBOL
+  k: {t: SYMBOL, h: toggle}
 - p: [24, 35]
   k: $$mdi:keyboard-esc$$
 - p: [36, 41]
