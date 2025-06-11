@@ -55,7 +55,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - <
+  - {t: '-', s: _}
   - {t: '`', s: '~'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -66,10 +66,10 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - HOME
-  - PG UP
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - {t: 'Sft+AltGr+]', s: 'Sft+AltGr+}'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -78,7 +78,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - END
+  - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
